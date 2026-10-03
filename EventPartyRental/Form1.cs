@@ -8,6 +8,7 @@ namespace EventPartyRental
     public partial class Form1 : Form
     {
         //  LocalDB Connection
+        // Establishes connection to local SQL Server instance
         private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RentalDB;Integrated Security=True";
 
         public Form1()
