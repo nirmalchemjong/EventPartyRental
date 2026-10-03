@@ -60,6 +60,8 @@ namespace EventPartyRental
 
     // 2. INHERITANCE
     // ElectronicItem inherits from the base RentalItem class
+
+    // Applies a standard $15 insurance fee to all electronic rentals
     public class ElectronicItem : RentalItem
     {
         public ElectronicItem(int id, string name, decimal dailyRate)
