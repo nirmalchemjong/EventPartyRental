@@ -89,5 +89,31 @@ namespace EventPartyRental
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //  EXCEPTION HANDLING
+            try
+            {
+                
+                RentalItem testItem = new ElectronicItem(3, "PA System", 50.00m);
+
+               
+                int rentalDays = 2;
+                decimal totalFee = testItem.CalculateRentalFee(rentalDays);
+
+                MessageBox.Show($"Item: {testItem.Name}\nTotal for {rentalDays} days: ${totalFee}",
+                                "Fee Calculation Success");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred during calculation: " + ex.Message, "Error");
+            }
+        }
     }
 }

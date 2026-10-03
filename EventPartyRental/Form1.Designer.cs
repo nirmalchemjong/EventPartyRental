@@ -36,6 +36,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
             SuspendLayout();
             // 
@@ -71,7 +72,7 @@
             // 
             // btnAddCustomer
             // 
-            btnAddCustomer.Location = new Point(284, 401);
+            btnAddCustomer.Location = new Point(149, 401);
             btnAddCustomer.Name = "btnAddCustomer";
             btnAddCustomer.Size = new Size(192, 52);
             btnAddCustomer.TabIndex = 4;
@@ -107,11 +108,22 @@
             label3.TabIndex = 7;
             label3.Text = "Email";
             // 
+            // button1
+            // 
+            button1.Location = new Point(400, 410);
+            button1.Name = "button1";
+            button1.Size = new Size(181, 42);
+            button1.TabIndex = 8;
+            button1.Text = "Calculate Test Fee";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(717, 460);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -138,5 +150,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button1;
     }
 }
