@@ -133,7 +133,7 @@
             Controls.Add(txtName);
             Controls.Add(dgvInventory);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Event Party Rental System";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dgvInventory).EndInit();
             ResumeLayout(false);
